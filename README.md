@@ -2,6 +2,8 @@
 
 An interactive 3D visualization of the evolutionary paths.
 
+![](vr.jpg)
+
 Start: https://viewzavr.com/apps/vr-flu-galaxy
 
 # input file format
