@@ -20,7 +20,7 @@ Json-formatted file of trajectories in form:
 
 # copyright
 
-2021 (c) Pavel Vasev, Majid Forghani
+2021 (c) Majid Forghani, Pavel Vasev
 
 Computer visualization lab, https://cv.imm.uran.ru
 
