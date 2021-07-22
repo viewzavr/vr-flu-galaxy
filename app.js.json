@@ -1,261 +1,265 @@
 {
-  "children": {
-    "state": {
-      "params": {
-        "current-obj": "/array-slice-2"
-      },
-      "children": {
-        "camera": {
-          "params": {
-            "cameraPos": [
-              -19.750619015673948,
-              -12.106991248625196,
-              31.438591363514732
-            ],
-            "cameraCenter": [
-              -4.67959918232717,
-              2.31137744263947,
-              -2.302079745821258
-            ]
-          }
-        }
-      }
-    },
-    "scene": {
-      "params": {
-        "virus-json-file": "./data/virs.json",
-        "virus.json": "./virs.json"
-      },
-      "module_url": "http://viewzavr.com/apps/vr-majid-virtr/./app.js",
-      "children": {
-        "array-slice-2": {
-          "params": {
-            "start": 0,
-            "len": 500,
-            "start2": 0,
-            "len2": 99
-          },
-          "manual": true,
-          "type": "array-slice-2",
-          "children": {
-            "link": {
-              "params": {
-                "enabled": true,
-                "from": "/->data",
-                "to": "/array-slice-2->input",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 0
-            }
-          },
-          "order": 0
-        },
-        "lines": {
-          "params": {
-            "radius": 2.8,
-            "color": 255,
-            "opacity": 100,
-            "additive": 0,
-            "visible": true
-          },
-          "manual": true,
-          "type": "lines",
-          "children": {
-            "link": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->output",
-                "to": "/lines->positions",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 0
-            },
-            "link_1": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2_1->output",
-                "to": "/lines->colors",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 1
-            }
-          },
-          "order": 1
-        },
-        "array-slice-2_1": {
-          "params": {},
-          "manual": true,
-          "type": "array-slice-2",
-          "children": {
-            "link": {
-              "params": {
-                "enabled": true,
-                "from": "/->data_colors",
-                "to": "/array-slice-2_1->input",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 0
-            },
-            "link_1": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->start",
-                "to": "/array-slice-2_1->start",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 1
-            },
-            "link_2": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->len",
-                "to": "/array-slice-2_1->len",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 2
-            },
-            "link_3": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->start2",
-                "to": "/array-slice-2_1->start2",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 3
-            },
-            "link_4": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->len2",
-                "to": "/array-slice-2_1->len2",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 4
-            }
-          },
-          "order": 2
-        },
-        "bgcolor": {
-          "params": {
-            "color": [
-              0.1,
-              0.1,
-              0.18
-            ]
-          },
-          "manual": true,
-          "type": "bgcolor",
-          "order": 3
-        },
-        "array-slice-2_1_2": {
-          "params": {
-            "len2": 1
-          },
-          "manual": true,
-          "type": "array-slice-2",
-          "children": {
-            "link": {
-              "params": {
-                "enabled": true,
-                "from": "/->data",
-                "to": "/array-slice-2_1_2->input",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 0
-            },
-            "link_1": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->len",
-                "to": "/array-slice-2_1_2->len",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 1
-            },
-            "link_2": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->start",
-                "to": "/array-slice-2_1_2->start",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 2
-            },
-            "link_3": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2->start2",
-                "to": "/array-slice-2_1_2->start2",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 3
-            }
-          },
-          "order": 4
-        },
-        "points": {
-          "params": {
-            "radius": 1.2,
-            "color": [
-              0.1,
-              0.9,
-              0.05
-            ],
-            "opacity": 100,
-            "shape": 2,
-            "additive": 0,
-            "depth-test": 1,
-            "visible": true
-          },
-          "manual": true,
-          "type": "points",
-          "children": {
-            "link": {
-              "params": {
-                "enabled": true,
-                "from": "/array-slice-2_1_2->output",
-                "to": "/points->positions",
-                "tied_to_parent": true
-              },
-              "manual": true,
-              "type": "link",
-              "order": 0
-            }
-          },
-          "order": 5
-        }
-      }
-    }
-  },
-  "packages": {
-    "codes": [
-      "vis-comps"
-    ],
-    "urls": []
-  },
-  "viewzavr_player_flags": 1
+	"children": {
+		"state": {
+			"params": {
+				"current-obj": "/array-slice-2"
+			},
+			"children": {
+				"camera": {
+					"params": {
+						"cameraPos": [
+							-2.7445343072631165,
+							2.2378510505376217,
+							50
+						],
+						"cameraCenter": [
+							-2.7445343072631165,
+							2.2378510505376186,
+							-1.385657009695942e-16
+						]
+					}
+				}
+			}
+		},
+		"scene": {
+			"params": {
+				"virus-json-file": "./data/virs.json",
+				"virus.json": "./virs.json"
+			},
+			"module_url": "https://viewzavr.com/apps/vr-flu-galaxy/./app.js",
+			"children": {
+				"array-slice-2": {
+					"params": {
+						"start": 0,
+						"len": 186,
+						"start2": 0,
+						"len2": 99
+					},
+					"manual": true,
+					"type": "array-slice-2",
+					"children": {
+						"link": {
+							"params": {
+								"enabled": true,
+								"from": "/->data",
+								"to": "/array-slice-2->input",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 0
+						}
+					},
+					"order": 0
+				},
+				"lines": {
+					"params": {
+						"radius": 2.8,
+						"color": [
+							1,
+							0.03,
+							0.03
+						],
+						"opacity": 100,
+						"additive": 0,
+						"visible": true
+					},
+					"manual": true,
+					"type": "lines",
+					"children": {
+						"link": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->output",
+								"to": "/lines->positions",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 0
+						},
+						"link_1": {
+							"params": {
+								"enabled": false,
+								"from": "/array-slice-2_1->output",
+								"to": "/lines->colors",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 1
+						}
+					},
+					"order": 1
+				},
+				"array-slice-2_1": {
+					"params": {},
+					"manual": true,
+					"type": "array-slice-2",
+					"children": {
+						"link": {
+							"params": {
+								"enabled": true,
+								"from": "/->data_colors",
+								"to": "/array-slice-2_1->input",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 0
+						},
+						"link_1": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->start",
+								"to": "/array-slice-2_1->start",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 1
+						},
+						"link_2": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->len",
+								"to": "/array-slice-2_1->len",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 2
+						},
+						"link_3": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->start2",
+								"to": "/array-slice-2_1->start2",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 3
+						},
+						"link_4": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->len2",
+								"to": "/array-slice-2_1->len2",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 4
+						}
+					},
+					"order": 2
+				},
+				"bgcolor": {
+					"params": {
+						"color": [
+							0.1,
+							0.1,
+							0.18
+						]
+					},
+					"manual": true,
+					"type": "bgcolor",
+					"order": 3
+				},
+				"array-slice-2_1_2": {
+					"params": {
+						"len2": 1
+					},
+					"manual": true,
+					"type": "array-slice-2",
+					"children": {
+						"link": {
+							"params": {
+								"enabled": true,
+								"from": "/->data",
+								"to": "/array-slice-2_1_2->input",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 0
+						},
+						"link_1": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->len",
+								"to": "/array-slice-2_1_2->len",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 1
+						},
+						"link_2": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->start",
+								"to": "/array-slice-2_1_2->start",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 2
+						},
+						"link_3": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2->start2",
+								"to": "/array-slice-2_1_2->start2",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 3
+						}
+					},
+					"order": 4
+				},
+				"points": {
+					"params": {
+						"radius": 1.2,
+						"color": [
+							0.9,
+							0.71,
+							0.26
+						],
+						"opacity": 100,
+						"shape": 2,
+						"additive": 0,
+						"depth-test": 1,
+						"visible": true
+					},
+					"manual": true,
+					"type": "points",
+					"children": {
+						"link": {
+							"params": {
+								"enabled": true,
+								"from": "/array-slice-2_1_2->output",
+								"to": "/points->positions",
+								"tied_to_parent": true
+							},
+							"manual": true,
+							"type": "link",
+							"order": 0
+						}
+					},
+					"order": 5
+				}
+			}
+		}
+	},
+	"packages": {
+		"codes": [
+			"vis-comps"
+		],
+		"urls": []
+	},
+	"viewzavr_player_flags": 1
 }
